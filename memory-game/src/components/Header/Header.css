@@ -1,0 +1,14 @@
+.header-wrapper,
+.scores {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #223c19;
+    position: relative;
+}
+
+.scores {
+    padding: 25px;
+}

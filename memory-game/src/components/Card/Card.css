@@ -1,0 +1,24 @@
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards-container div {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards-container img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px 5px rgba(158, 255, 105, 0.937);
+}
+
+.cards-container img {
+    width: 75%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
