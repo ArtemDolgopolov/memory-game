@@ -6,7 +6,7 @@ import './Card.css'
 export default function Card({ cards, onHandleClick }: CardProps): JSX.Element {
  return (
     <div className="cards-container">
-     {cards.slice(0, 12).map((card) => (
+     {cards.map((card) => (
        <div key={card.id} onClick={() => onHandleClick(card.id)}>
          <img src={card.image} alt={card.name} />
        </div>

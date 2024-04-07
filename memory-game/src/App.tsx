@@ -17,7 +17,8 @@ export default function App() {
     const response = await fetch('https://rickandmortyapi.com/api/character')
                      .then((response) => response.json());
 
-    setCards(response.results);
+    const data = response.results.slice(0, 12);
+    setCards(data);
   }
 
   function winGame(): void {
